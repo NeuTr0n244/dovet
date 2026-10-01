@@ -12,7 +12,7 @@ The scenes explicitly identify their sample workflow as illustrative. They conta
 
 ## Source and reproduction
 
-Run `node marketing/motion/render-videos.mjs` from the DOVET project directory. The script uses the configured workspace Sharp runtime, the supplied `public/assets/dovet-bird.png`, and FFmpeg on PATH. It renders all 192 frames for each movie directly to H.264, with fast-start metadata. `--posters` renders posters only. Environment variable `VIDEO=1`, `2`, or `3` selects one movie.
+Run `node marketing/motion/render-videos.mjs` from the DOVET project directory. Install the `sharp` Node package and FFmpeg first. The script resolves Sharp as a normal Node dependency and FFmpeg from PATH; optionally set `SHARP_MODULE` to a module path and `FFMPEG_PATH` to a binary path. It uses the supplied `public/assets/dovet-bird.png` and renders all 192 frames for each movie directly to H.264, with fast-start metadata. `--posters` renders posters only. Environment variable `VIDEO=1`, `2`, or `3` selects one movie.
 
 Typography: locally installed Cascadia Mono, with Consolas/monospace fallbacks. Palette: cream `#f6f1e5`, plum `#24152d`, carmine `#cf493a`.
 

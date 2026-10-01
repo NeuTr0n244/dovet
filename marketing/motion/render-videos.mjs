@@ -2,9 +2,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {spawn} from 'node:child_process';
 import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
 const require=createRequire(import.meta.url);
-const sharp=require('C:/Users/NEUTRON/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
-const project=path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/,'$1')),'../..');
+const sharp=require(process.env.SHARP_MODULE||'sharp');
+const ffmpegPath=process.env.FFMPEG_PATH||'ffmpeg';
+const project=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
 const out=path.join(project,'marketing');
 const bird=await sharp(path.join(project,'public/assets/dovet-bird.png')).resize(360,360,{fit:'inside',kernel:'nearest'}).png().toBuffer();
 const birdData=`data:image/png;base64,${bird.toString('base64')}`;
@@ -68,7 +70,7 @@ for(let i=0;i<scenes.length;i++){
  const poster=await sharp(Buffer.from(scenes[i](i===0?5.5:i===1?5.3:4.6))).png().toBuffer();
  fs.writeFileSync(path.join(out,`${filename}-poster.png`),poster);
  if(selected==='posters'){console.log(`${filename}: poster rendered`);continue;}
- const ffmpeg=spawn('ffmpeg',['-y','-hide_banner','-loglevel','error','-f','rawvideo','-pixel_format','rgb24','-video_size',`${W}x${H}`,'-framerate',String(FPS),'-i','pipe:0','-an','-c:v','libx264','-preset','medium','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',path.join(out,`${filename}.mp4`)],{windowsHide:true});
+ const ffmpeg=spawn(ffmpegPath,['-y','-hide_banner','-loglevel','error','-f','rawvideo','-pixel_format','rgb24','-video_size',`${W}x${H}`,'-framerate',String(FPS),'-i','pipe:0','-an','-c:v','libx264','-preset','medium','-crf','18','-pix_fmt','yuv420p','-movflags','+faststart',path.join(out,`${filename}.mp4`)],{windowsHide:true});
  let stderr='';ffmpeg.stderr.on('data',d=>stderr+=d);
  const ended=new Promise((resolve,reject)=>{ffmpeg.on('error',reject);ffmpeg.on('close',code=>code===0?resolve():reject(new Error(stderr||`ffmpeg exit ${code}`)));});
  for(let frame=0;frame<FPS*DURATION;frame++){

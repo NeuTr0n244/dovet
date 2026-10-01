@@ -1,6 +1,7 @@
 [
   {
     "file": "dovet-logo-transparent.png",
+    "originalPath": "raw/dovet-bird-original.png",
     "width": 1254,
     "height": 1254,
     "hasAlpha": true,
@@ -8,6 +9,7 @@
   },
   {
     "file": "dovet-avatar.png",
+    "originalPath": "raw/dovet-avatar-original.png",
     "width": 1024,
     "height": 1024,
     "hasAlpha": false,
@@ -15,6 +17,7 @@
   },
   {
     "file": "dovet-x-banner.png",
+    "originalPath": "raw/dovet-banner-original.png",
     "width": 1500,
     "height": 500,
     "hasAlpha": false,
@@ -22,6 +25,7 @@
   },
   {
     "file": "dovet-post-01.png",
+    "originalPath": "raw/dovet-post-01-original.png",
     "width": 1600,
     "height": 900,
     "hasAlpha": false,
@@ -29,6 +33,7 @@
   },
   {
     "file": "dovet-post-02.png",
+    "originalPath": "raw/dovet-post-02-original.png",
     "width": 1600,
     "height": 900,
     "hasAlpha": false,
@@ -36,6 +41,7 @@
   },
   {
     "file": "dovet-post-03.png",
+    "originalPath": "raw/dovet-post-03-original.png",
     "width": 1600,
     "height": 900,
     "hasAlpha": false,
@@ -43,6 +49,7 @@
   },
   {
     "file": "dovet-logo.png",
+    "originalPath": "raw/dovet-avatar-original.png",
     "width": 1024,
     "height": 1024,
     "hasAlpha": false,

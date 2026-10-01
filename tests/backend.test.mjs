@@ -74,6 +74,10 @@ test('unsupported primary response is distinct from an empty eligible-pool list'
   const empty = await collectReport(SOL, { fetchImpl: async () => response([]) });
   assert.equal(empty.receipts[0].status, 'ok'); assert.match(empty.events[1].message, /no eligible/); assert.equal(empty.events[2].status, 'skipped');
 });
+test('unsupported corroboration payload is unavailable rather than a false pool mismatch', () => {
+  const comparison = comparePool({ data: {} }, normalizedPool);
+  assert.equal(comparison.status, 'unavailable'); assert.equal(comparison.differencePct, null); assert.match(comparison.message, /schema/);
+});
 test('oversized source bodies are discarded and malformed JSON is unavailable', async () => {
   const large = await fetchReceipt('https://source.test', 'test', { maxBytes: 20, fetchImpl: async () => new Response('x'.repeat(100)) });
   assert.equal(large.receipt.status, 'unavailable'); assert.equal(large.receipt.sha256, null);
