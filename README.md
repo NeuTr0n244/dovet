@@ -5,7 +5,8 @@ A small evidence post for Solana market observations. Paste a token mint to read
 - Local workspace: http://localhost:3197
 - Source repository: https://github.com/NeuTr0n244/dovet
 - Public deployment: https://dovet-ten.vercel.app
-- Contract address: **CA: soon**. No project developer wallet, confirmed mint or X profile has been supplied.
+- Official X: https://x.com/DovetSol
+- Contract address: **CA: soon**. No project developer wallet or confirmed mint has been supplied.
 
 ## Run locally
 

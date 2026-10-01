@@ -1159,6 +1159,15 @@ footer {
 .footer-links > span {
   color: var(--muted);
 }
+.footer-links a.x-link {
+  border: 1px solid var(--ink);
+  padding: 10px 12px;
+  gap: 8px;
+}
+.footer-links a.x-link:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
 .footer-bottom {
   width: 100%;
   border-top: 1px solid var(--line);

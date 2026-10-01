@@ -49,10 +49,9 @@ During a lookup the website shows a general request-in-flight state. Detailed ta
 - The public schedule is daily at 03:17 UTC. A configured schedule and an observed automatic execution are different states.
 - Custom receipts are on demand and retained locally up to 30. They are not added to the public route.
 - The public feed exposes up to 14 runs; development storage is capped at 180 runs. Hosted Blob object deletion is not currently scheduled.
-- No project wallet, confirmed CA or X identity has been supplied. The public address state is CA: soon.
+- Official X: https://x.com/DovetSol. No project wallet or confirmed CA has been supplied. The public address state is CA: soon.
 - Future token-sponsored observation capacity is a direction only. No token purchase is needed to use the tool.
 
 ## Verification criteria
 
 Check legible hierarchy at 390px and desktop widths; intact bird alpha; focus visibility; functioning receipt tabs, source links, exports and archive filters; unavailable and partial data; repeated lookups; Skip/Escape and reduced motion; and public schedule labels based on real status fields. Screen captures and actual browser interactions are required before claiming visual QA passed.
-

@@ -1018,6 +1018,18 @@ function App() {
           DOVET<span>A little post for the bigger picture.</span>
         </div>
         <div className="footer-links">
+          <a
+            className="x-link"
+            href="https://x.com/DovetSol"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="DOVET on X — @DovetSol"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.153h7.594l5.243 6.932 6.064-6.932Zm-1.29 19.49h2.039L6.487 3.24H4.3l13.31 17.403Z" />
+            </svg>
+            @DovetSol <ArrowUpRight size={13} aria-hidden="true" />
+          </a>
           <button onClick={() => mountIntro({ replay: true })}>
             Replay arrival ↗
           </button>
