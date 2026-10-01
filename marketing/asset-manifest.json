@@ -1,0 +1,51 @@
+[
+  {
+    "file": "dovet-logo-transparent.png",
+    "width": 1254,
+    "height": 1254,
+    "hasAlpha": true,
+    "bytes": 660814
+  },
+  {
+    "file": "dovet-avatar.png",
+    "width": 1024,
+    "height": 1024,
+    "hasAlpha": false,
+    "bytes": 917526
+  },
+  {
+    "file": "dovet-x-banner.png",
+    "width": 1500,
+    "height": 500,
+    "hasAlpha": false,
+    "bytes": 690005
+  },
+  {
+    "file": "dovet-post-01.png",
+    "width": 1600,
+    "height": 900,
+    "hasAlpha": false,
+    "bytes": 1587699
+  },
+  {
+    "file": "dovet-post-02.png",
+    "width": 1600,
+    "height": 900,
+    "hasAlpha": false,
+    "bytes": 1479938
+  },
+  {
+    "file": "dovet-post-03.png",
+    "width": 1600,
+    "height": 900,
+    "hasAlpha": false,
+    "bytes": 1788101
+  },
+  {
+    "file": "dovet-logo.png",
+    "width": 1024,
+    "height": 1024,
+    "hasAlpha": false,
+    "bytes": 917526
+  }
+]

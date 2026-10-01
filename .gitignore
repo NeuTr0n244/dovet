@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vercel/
+.env*
+!.env.example
+*.log
+output/
+marketing/renders/
+marketing/raw/
+
+.vercel
+.env*.local
