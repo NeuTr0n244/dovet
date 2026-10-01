@@ -1,0 +1,22 @@
+DOVET — X PROFILE AND LAUNCH POST
+
+BIO
+Read-only Solana market checks. Compare the same pool across sources when available. Export a sourced receipt. No wallet required.
+
+Bio character count: 130
+
+PROFILE WEBSITE
+https://dovet-ten.vercel.app
+
+POST
+Meet DOVET. Paste a Solana mint to read public market data, check the same pool against a second source when available, and export a receipt with sources, timestamps and hashes. No wallet required. https://dovet-ten.vercel.app
+
+Post character count for X: 221
+Count uses 23 characters for the URL.
+Literal text character count: 226
+
+ARTWORK FILES
+Profile logo/avatar: 01-logo-twitter.png (1024 x 1024)
+Banner: 02-banner-twitter.png (1500 x 500)
+Post image: 03-post-launch.png (1600 x 900)
+
